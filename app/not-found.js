@@ -1,7 +1,8 @@
 import Layout from '@/layouts/layout';
+import Link from 'next/link';
 
 export const metadata = {
-  title: 'Page not found',
+  title: 'Տ-Քնսթրաքշն» ՓԲԸ - Էջը չի գտնվել',
 };
 
 export default function notFound() {
@@ -13,21 +14,10 @@ export default function notFound() {
             <div className='error_box max550'>
               <div className='title_holder'>
                 <h1>404</h1>
-                <h3>Page Not Found</h3>
-                <p>
-                  Sorry, but the page you are looking for was moved, removed, renamed or might never
-                  existed...
-                </p>
+                <h3>Էջը չի գտնվել</h3>
               </div>
-              <div className='search_holder'>
-                <form method='get'>
-                  <div>
-                    <input type='text' placeholder='Search' name='s' autoComplete='off' />
-                  </div>
-                  <div>
-                    <input type='submit' value='Search' />
-                  </div>
-                </form>
+              <div className='contact_left'>
+                <Link href='/'>ՎԵՐԱԴԱՌՆԱԼ ԳԼԽԱՎՈՐ</Link>
               </div>
             </div>
           </div>

@@ -2,7 +2,6 @@
 import React, { useState, useEffect } from 'react';
 import MetisMenu from 'metismenujs';
 import Link from 'next/link';
-import { Facebook, Instagram, Linkedin, Twitter, Vk } from '../public/svg/social/IconSocial';
 
 export default function MobileHeader() {
   const [isMobileMenu, setMobileMenu] = useState(false);
