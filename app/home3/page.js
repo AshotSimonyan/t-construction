@@ -10,53 +10,41 @@ import Layout from '@/layouts/layout';
 import MobileHeader from '@/layouts/mobile-header';
 
 export const metadata = {
-    title: 'Home Gama',
-}
+  title: 'Home Gama',
+};
 
 export default function page() {
-    return (
-        <>
+  return (
+    <>
+      <Layout className={'nobglight'}>
+        {/* <!-- Hero Header --> */}
+        <Home3Hero />
+        {/* <!-- /Hero Header --> */}
 
-            <Layout className={"nobglight"}>
+        {/* <!-- Introduce Shortcode --> */}
+        <Home3Introduce />
+        {/* <!-- /Introduce Shortcode --> */}
 
-                {/* <!-- Hero Header --> */}
-                <Home3Hero />
-                {/* <!-- /Hero Header --> */}
+        {/* <!-- Service Classic Shortcode --> */}
+        <Home3Service />
+        {/* <!-- /Service Classic Shortcode --> */}
 
+        {/* <!-- Info & Rating --> */}
+        <Home3Info />
+        {/* <!-- /Info & Rating --> */}
 
-                {/* <!-- Introduce Shortcode --> */}
-                <Home3Introduce />
-                {/* <!-- /Introduce Shortcode --> */}
+        {/* <!-- Principles --> */}
+        <Home3Principle />
+        {/* <!-- /Principles --> */}
 
+        {/* <!-- Project Sticky Modern Shortcode --> */}
+        <Home3Project />
+        {/* <!-- /Project Sticky Modern Shortcode --> */}
 
-                {/* <!-- Service Classic Shortcode --> */}
-                <Home3Service />
-                {/* <!-- /Service Classic Shortcode --> */}
-
-
-
-                {/* <!-- Info & Rating --> */}
-                <Home3Info />
-                {/* <!-- /Info & Rating --> */}
-
-
-                {/* <!-- Principles --> */}
-                <Home3Principle />
-                {/* <!-- /Principles --> */}
-
-
-                {/* <!-- Project Sticky Modern Shortcode --> */}
-                <Home3Project />
-                {/* <!-- /Project Sticky Modern Shortcode --> */}
-
-
-
-
-                {/* <!-- Blog Section --> */}
-                <Home3Blog />
-                {/* <!-- /Blog Section --> */}
-            </Layout>
-
-        </>
-    )
+        {/* <!-- Blog Section --> */}
+        <Home3Blog />
+        {/* <!-- /Blog Section --> */}
+      </Layout>
+    </>
+  );
 }

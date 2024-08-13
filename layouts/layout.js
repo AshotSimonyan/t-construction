@@ -1,35 +1,33 @@
-import DesktopHeader from './desktop-header'
-import Footer from './footer'
-import MobileHeader from './mobile-header'
+import React from 'react';
+import DesktopHeader from './desktop-header';
+import MobileHeader from './mobile-header';
+import Footer from './footer';
 
 export default function Layout({ children, className }) {
-    return (
-        <>
-            <div className="industify_fn_wrapper_all" data-nav-skin={className}>
+  return (
+    <>
+      <div className='industify_fn_wrapper_all' data-nav-skin={className}>
+        {/* <!-- Wrapper --> */}
+        <div className='industify_fn_wrapper'>
+          {/* <!-- Header --> */}
+          <DesktopHeader />
+          {/* <!-- /Header --> */}
 
-                {/* <!-- Wrapper --> */}
-                <div className="industify_fn_wrapper">
+          {/* <!-- Mobile Menu --> */}
+          <MobileHeader />
+          {/* <!-- /Mobile Menu --> */}
 
-                    {/* <!-- Header --> */}
-                    <DesktopHeader />
-                    {/* <!-- /Header --> */}
+          {/* <!-- Preloader --> */}
+          {/* <Preloader/> */}
+          {/* <!-- /Preloader --> */}
 
-                    {/* <!-- Mobile Menu --> */}
-                    <MobileHeader />
-                    {/* <!-- /Mobile Menu --> */}
+          {children}
 
-                    {/* <!-- Preloader --> */}
-                    {/* <Preloader /> */}
-                    {/* <!-- /Preloader --> */}
-
-                    {children}
-
-                    {/* Site Footer Start */}
-                    <Footer />
-                    {/* Site Footer End */}
-
-                </div>
-            </div>
-        </>
-    )
+          {/* Site Footer Start */}
+          <Footer />
+          {/* Site Footer End */}
+        </div>
+      </div>
+    </>
+  );
 }
