@@ -2749,10 +2749,7 @@ p {
   border: none;
   cursor: pointer;
 }
-.contact_left a:focus,
-.contact_left button {
-  outline: 1px dashed #444;
-}
+
 @media (max-width: 1040px) {
   .contact_holder {
     flex-wrap: wrap;

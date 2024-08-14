@@ -64,9 +64,9 @@ export default function MobileHeader() {
                 <li>
                   <Link href='/services/101'>ԾԱՌԱՅՈՒԹՅՈՒՆՆԵՐ</Link>
                 </li>
-                <li>
-                  <Link href='/gallery'>ՊԱՏԿԵՐԱՍՐԱՀ</Link>
-                </li>
+                {/*<li>*/}
+                {/*  <Link href='/gallery'>ՊԱՏԿԵՐԱՍՐԱՀ</Link>*/}
+                {/*</li>*/}
                 <li>
                   <Link href='/contact'>ՀԵՏԱԴԱՐՁ ԿԱՊ</Link>
                 </li>
