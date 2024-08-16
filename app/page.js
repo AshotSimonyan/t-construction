@@ -6,7 +6,6 @@ import Layout from '@/layouts/layout';
 import HomeProject from '@/components/Home/HomeProject';
 
 export default function Home() {
-  // #0e2424
   return (
     <>
       <Layout className={'transdark'}>
@@ -35,3 +34,6 @@ export default function Home() {
     </>
   );
 }
+
+//main color #1a4691
+//orange -> #00358f

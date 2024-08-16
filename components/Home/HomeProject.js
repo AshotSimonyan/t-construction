@@ -27,14 +27,14 @@ export default function HomeProject() {
                           <img src='/img/thumb/560-375.jpg' alt='' />
                           <div
                             className='abs_img'
-                            style={{ backgroundImage: `url(/img/portfolio/${service.id}.jpg)` }}
+                            style={{ backgroundImage: `url(${service.image})` }}
                           >
-                            <Link href={`portfolioSinglePage${service.id}`}></Link>
+                            <Link href={`/services/${service.id}`}></Link>
                           </div>
                         </div>
                         <div className='title_holder'>
                           <h3>
-                            <Link href={`portfolioSinglePage${service.id}`}>{service.title}</Link>
+                            <Link href={`/services/${service.id}`}>{service.title}</Link>
                           </h3>
                           <p>
                             <Link href={`portfolioSinglePage${service.id}`}>

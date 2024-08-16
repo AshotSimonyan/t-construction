@@ -21,7 +21,7 @@ export const services = [
         </p>
       </>
     ),
-    images: ['/img/service/single/1.jpg', '/img/service/single/2.jpg'],
+    image: '/img/service/1.jpg',
   },
   {
     id: 102,
@@ -63,7 +63,7 @@ export const services = [
         </p>
       </>
     ),
-    images: ['/img/service/single/3.jpg', '/img/service/single/4.jpg'],
+    image: '/img/service/2.jpg',
   },
   {
     id: 103,
@@ -88,7 +88,7 @@ export const services = [
         </p>
       </>
     ),
-    images: ['/img/service/single/5.jpg', '/img/service/single/6.jpg'],
+    image: '/img/service/3.jpg',
   },
   {
     id: 104,
@@ -109,7 +109,7 @@ export const services = [
         </p>
       </>
     ),
-    images: ['/img/service/single/7.jpg', '/img/service/single/8.jpg'],
+    image: '/img/service/4.jpg',
   },
   {
     id: 105,
@@ -127,6 +127,6 @@ export const services = [
         </p>
       </>
     ),
-    images: ['/img/service/single/9.jpg', '/img/service/single/10.jpg'],
+    image: '/img/service/5.jpg',
   },
 ];

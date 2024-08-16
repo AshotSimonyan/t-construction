@@ -13,7 +13,7 @@ export default function ServicesSingle({ service }) {
 
               <div className='industify_fn_service_single'>
                 <div className='img_holder'>
-                  <img src={service.images[0]} alt='' />
+                  <img src={service.image} alt='' />
                 </div>
 
                 <div className='desc_holder'>{service.description}</div>

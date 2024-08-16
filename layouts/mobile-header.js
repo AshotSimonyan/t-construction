@@ -22,9 +22,9 @@ export default function MobileHeader() {
             <div className='info'>
               <a href='mailto:info@tconstruction.am'>info@tconstruction.am</a>
             </div>
-            <div className='info'>
-              <span>Վահրամ Փափազյան 8</span>
-            </div>
+            {/*<div className='info'>*/}
+            {/*  <span>Վահրամ Փափազյան 8</span>*/}
+            {/*</div>*/}
           </div>
         </div>
         {/* LOGO & HAMBURGER */}

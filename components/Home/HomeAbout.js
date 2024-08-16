@@ -64,7 +64,7 @@ export default function HomeAbout() {
                     <div
                       className='abs_img'
                       data-bg-img='img/about/right.jpg'
-                      style={{ backgroundImage: 'url(img/about/right.jpg)' }}
+                      style={{ backgroundImage: 'url(img/about/right.webp)' }}
                     ></div>
                   </div>
                   <div

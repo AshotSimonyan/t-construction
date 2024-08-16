@@ -1036,14 +1036,14 @@ p {
 /* translight */
 [data-nav-skin='translight'] .industify_fn_header {
   position: absolute;
-  background-color: rgba(255, 255, 255, 0.3);
+  background-color: rgba(255, 255, 255, 0.7);
   border-bottom: none;
 }
 
 /* transdark */
 [data-nav-skin='transdark'] .industify_fn_header {
   position: absolute;
-  background-color: rgba(0, 0, 0, 0.3);
+  background-color: rgba(0, 0, 0, 0.7);
   border-bottom: none;
 }
 [data-nav-skin='transdark'] .industify_fn_header .desktop_logo_dark {
@@ -1151,7 +1151,7 @@ p {
   font-size: 44px;
   letter-spacing: 0px;
   font-weight: 300;
-  line-height: 1;
+  line-height: 1.2;
   position: relative;
   left: -1px;
 }
@@ -1212,6 +1212,15 @@ p {
   top: 14px;
   transform: rotate(135deg);
 }
+
+@media (max-width: 768px) {
+  .industify_fn_pagetitle .title_holder {
+    padding: 45px 0px 35px 0px;
+  }
+  .industify_fn_pagetitle h3 {
+    font-size: 32px;
+  }
+}
 /*------------------------------------------------------------------*/
 /*	06) SIDEBAR PAGE
 /*------------------------------------------------------------------*/
@@ -1245,6 +1254,16 @@ p {
     padding-right: 0;
     padding-top: 0;
     width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .industify_fn_leftsidebar {
+    padding-top: 60px;
+    padding-bottom: 0;
+  }
+  .industify_fn_rightsidebar {
+    padding-bottom: 0;
   }
 }
 /*------------------------------------------------------------------*/
@@ -2777,6 +2796,8 @@ p {
   border-radius: 3px;
   margin-bottom: 60px;
   min-width: 100%;
+  max-height: 540px;
+  object-fit: cover;
 }
 .industify_fn_service_single .desc_holder p {
   margin: 0;
@@ -2791,6 +2812,12 @@ p {
 }
 .industify_fn_service_single .desc_holder {
   margin-bottom: 56px;
+}
+
+@media (max-width: 480px) {
+  .industify_fn_service_single .desc_holder p {
+    font-size: 14px;
+  }
 }
 /*------------------------------------------------------------------*/
 /*	19.1 Random Services
@@ -3326,7 +3353,7 @@ blockquote {
   top: 0px;
   right: 0px;
   bottom: 0px;
-  background-color: rgba(8, 18, 37, 1);
+  background-color: rgba(8, 18, 37, 0.7);
   opacity: 0.9;
   content: '';
 }
@@ -4005,7 +4032,7 @@ blockquote {
   }
   .industify_slider_alpha .title_holder h3 {
     margin: 0px;
-    font-size: 24px;
+    font-size: 20px;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -4471,6 +4498,12 @@ blockquote {
   }
 }
 @media (max-width: 480px) {
+  .about_section {
+    padding: 75px 0;
+  }
+  .fn_cs_about .r_inner {
+    padding-bottom: 0;
+  }
   .fn_cs_about .rightpart img {
     max-width: 220px;
   }
@@ -4482,6 +4515,7 @@ blockquote {
     left: 40px !important;
     top: 40px !important;
   }
+
 }
 /*------------------------------------------------------------------*/
 /*	Shortcode #4 SERVICE QUERY
@@ -5140,6 +5174,18 @@ blockquote {
   }
   .fn_cs_about_with_rating .bottom_section p {
     font-size: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .service_section {
+    padding: 75px 0;
+  }
+  .fn_cs_about_with_rating .title_holder {
+    max-width: 400px;
+    width: 100%;
+    min-width: 0;
+    padding-top: 0;
   }
 }
 /*------------------------------------------------------------------*/
@@ -6965,8 +7011,8 @@ blockquote {
   flex-direction: row;
 }
 .fn_cs_project_sticky .left_part {
-  width: 350px;
-  min-width: 350px;
+  width: 370px;
+  min-width: 370px;
 }
 .fn_cs_project_sticky .right_part {
   width: 100%;
@@ -7208,7 +7254,6 @@ blockquote {
   .fn_cs_project_sticky .left_part {
     width: 100%;
     min-width: 100%;
-    margin-bottom: 70px;
   }
   .fn_cs_project_sticky .right_part {
     width: 100%;
@@ -7220,6 +7265,12 @@ blockquote {
   }
   .fn_cs_project_sticky .left_part h3 {
     font-size: 36px;
+  }
+}
+
+@media (max-width: 480px) {
+  .fn_cs_project_sticky {
+    padding: 75px 0;
   }
 }
 

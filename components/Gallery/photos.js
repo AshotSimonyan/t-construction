@@ -25,7 +25,7 @@ export const photos = [
     height: '155px',
   },
   {
-    src: 'img/gallery/6.jpg',
+    src: 'img/gallery/5.jpg',
     width: '32',
     height: '155px',
   },

@@ -1,7 +1,7 @@
 import { Arrow_r, Certificate, Checked, Stars } from '@/public/svg/icon';
 import Link from 'next/link';
 
-const rightImage = '/img/service/right-image.jpg';
+const rightImage = '/img/service/small.webp';
 
 export default function HomeWhyChooseUs() {
   const data = [
