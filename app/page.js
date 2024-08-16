@@ -40,4 +40,4 @@ export default function Home() {
 
 //#111724 -> 0f1d3b darker ->#0c1831
 
-//rgba(15, 29, 59, 0.9) rgb(26 70 145 / 40%)
+//rgba(15, 29, 59, 0.9) rgb(26 70 145 / 40%) #4882e5

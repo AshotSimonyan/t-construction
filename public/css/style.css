@@ -1054,7 +1054,10 @@ p {
   display: block;
 }
 [data-nav-skin='transdark'] .industify_fn_header .vert_nav > li > a {
-  color: #eee;
+  color: #fff;
+}
+[data-nav-skin='transdark'] .industify_fn_header .vert_nav > li > a:hover {
+  color: #4882e5;
 }
 [data-nav-skin='transdark'] .lang_switcher .click {
   color: #eee;
@@ -1543,7 +1546,7 @@ p {
   position: relative;
 }
 .service_list_as_function li a:after {
-  background-color: #ffc600;
+  background-color: #fff;
   content: '';
   position: absolute;
   left: 0px;
@@ -2752,10 +2755,7 @@ p {
 .contact_left textarea {
   min-height: 200px;
 }
-.contact_left a:hover,
-.contact_left button {
-  background-color: #1a4691;
-}
+
 .contact_left a,
 .contact_left button {
   display: inline-block;
@@ -2768,8 +2768,12 @@ p {
   text-decoration: none;
   border: none;
   cursor: pointer;
+  transition: .3s;
 }
-
+.contact_left a:hover,
+.contact_left button:hover {
+  background-color:  #4882e5;
+}
 @media (max-width: 1040px) {
   .contact_holder {
     flex-wrap: wrap;
@@ -3111,7 +3115,7 @@ blockquote {
   margin: -75px 0 0 -75px;
   border-radius: 50%;
   border: 3px solid transparent;
-  border-top-color: #3498db;
+  border-top-color: #fff;
 
   -webkit-animation: spin 2s linear infinite;
   animation: spin 2s linear infinite;
@@ -3127,7 +3131,7 @@ blockquote {
   bottom: 5px;
   border-radius: 50%;
   border: 3px solid transparent;
-  border-top-color: #e74c3c;
+  border-top-color: #fff;
 
   -webkit-animation: spin 3s linear infinite;
   animation: spin 3s linear infinite;
@@ -3142,7 +3146,7 @@ blockquote {
   bottom: 15px;
   border-radius: 50%;
   border: 3px solid transparent;
-  border-top-color: #92d300;
+  border-top-color: #fff;
   -webkit-animation: spin 1.5s linear infinite;
   animation: spin 1.5s linear infinite;
 }
@@ -3151,7 +3155,7 @@ blockquote {
   top: 0;
   width: 51%;
   height: 100%;
-  background: #222;
+  background: #0c1831;
   z-index: 1000;
 }
 #industify-fn-loader .loader-section.section-left {
@@ -3494,7 +3498,7 @@ blockquote {
   top: 100%;
   left: 0px;
   margin-top: 3px;
-  background-color: #1a4691;
+  background-color: #fff;
 }
 .industify_fn_widget_business_hours ul {
   list-style-type: none;
@@ -7220,7 +7224,7 @@ blockquote {
   z-index: -1;
 }
 .fn_cs_project_sticky .right_part .item:hover .img_holder a {
-  background-color: rgba(15, 29, 59, 0.6);
+  background-color: rgba(15, 29, 59, 0.7);
 }
 .fn_cs_project_sticky .right_part .item:hover .img_holder a:after {
   height: 20px;
@@ -7229,7 +7233,7 @@ blockquote {
   width: 20px;
 }
 .fn_cs_project_sticky .right_part .item:hover .title_holder p a {
-  color: #1a4691;
+  color: #4882e5;
 }
 .fn_cs_project_sticky .right_part .item:hover .title_holder > a {
   opacity: 1;
@@ -9789,7 +9793,7 @@ blockquote {
   margin-bottom: 0;
 }
 .fn_cs_location_list .content_holder a {
-  color: #1a4691;
+  color: #fff;
   text-decoration: none;
 }
 .fn_cs_location_list .content_holder a:hover {
