@@ -81,7 +81,7 @@ export default function HomeAbout() {
                       backfaceVisibility: 'hidden',
                     }}
                   >
-                    <img src='img/thumb/500-560.jpg' alt='' />
+                    <img src='/img/thumb/500-560.jpg' alt='' />
                   </div>
                 </div>
               </div>
