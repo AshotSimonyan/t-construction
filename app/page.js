@@ -36,4 +36,8 @@ export default function Home() {
 }
 
 //main color #1a4691
-//orange -> #00358f
+//#d24e1a #d24e1a orange -> #00358f
+
+//#111724 -> 0f1d3b darker ->#0c1831
+
+//rgba(15, 29, 59, 0.9)

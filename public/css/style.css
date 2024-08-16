@@ -89,6 +89,7 @@ body {
   letter-spacing: 0;
   font-weight: 400;
   color: #666;
+  background-color: #f7f7f7;
 
   word-break: break-word;
 }
@@ -892,7 +893,7 @@ p {
   width: 100%;
   float: left;
   clear: both;
-  background-color: #16161b;
+  background-color: #0f1d3b;
   display: flex;
   flex-direction: row;
   padding: 0 50px;
@@ -1043,7 +1044,7 @@ p {
 /* transdark */
 [data-nav-skin='transdark'] .industify_fn_header {
   position: absolute;
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: rgba(15, 29, 59, 0.8);
   border-bottom: none;
 }
 [data-nav-skin='transdark'] .industify_fn_header .desktop_logo_dark {
@@ -1730,7 +1731,7 @@ p {
   font-family: var(--Rubik);
 }
 .industify_fn_widget_estimate .bfwe_inner a:hover {
-  background-color: #111422;
+  background-color: #0f1d3b;
   color: #fff;
 }
 .widget_block {
@@ -1767,7 +1768,7 @@ p {
   clear: both;
   width: 100%;
   padding: 18px 30px 18px 75px;
-  background-color: #111422;
+  background-color: #0f1d3b;
   position: relative;
   border-radius: 5px;
   overflow: hidden;
@@ -2709,14 +2710,14 @@ p {
 }
 .contact_holder .contact_left {
   width: 65%;
-  background-color: #0d0e13;
+  background-color: #0c1831;
   border-radius: 5px;
   overflow: hidden;
 }
 .contact_holder .contact_left h3 {
   margin: 0;
   padding: 30px;
-  background: #111422;
+  background: #0f1d3b;
   color: #fff;
 }
 .contact_holder .contact_right {
@@ -3748,7 +3749,7 @@ blockquote {
   height: 470px;
   left: 0px;
   z-index: 4;
-  background-color: rgba(14, 14, 14, 0.9);
+  background-color: rgba(15, 29, 59, 0.9);
   padding: 40px;
 }
 .industify_slider_alpha .title_holder .inner {
@@ -4235,10 +4236,10 @@ blockquote {
 .fn_cs_principles_modern .inner,
 .fn_cs_principles_modern .inner:before,
 .fn_cs_principles_modern .inner:after {
-  background-color: #0e141f;
+  background-color: #0c1831;
 }
 .fn_cs_principles_modern:after {
-  background-color: #111724;
+  background-color: #0f1d3b;
 }
 @media (max-width: 1200px) {
   .fn_cs_principles_modern ul li {
@@ -4539,7 +4540,7 @@ blockquote {
   float: left;
   clear: both;
   padding: 55px 50px;
-  background-color: #111724;
+  background-color: #0f1d3b;
 }
 .fn_cs_service_query .t_inner {
   width: 100%;
@@ -4598,7 +4599,7 @@ blockquote {
   width: 2px;
   top: 0px;
   bottom: 0px;
-  background-color: #111724;
+  background-color: #0f1d3b;
   display: block;
 }
 .fn_cs_service_query .item .img_holder {
@@ -5424,7 +5425,7 @@ blockquote {
   float: left;
   clear: both;
   padding: 30px;
-  background-color: #111724;
+  background-color: #0f1d3b;
 }
 .fn_cs_project_sticky_full .left_part h3 {
   margin: 0px;
@@ -7906,7 +7907,7 @@ blockquote {
   z-index: 1;
 }
 .fn_cs_services_classic .video_holder .video_bg:after {
-  background-color: #16161b;
+  background-color: #0f1d3b;
   opacity: 0.5;
   content: '';
   position: absolute;
@@ -7916,7 +7917,7 @@ blockquote {
   height: 110px;
 }
 .fn_cs_services_classic .video_holder .video_bg:before {
-  background-color: #16161b;
+  background-color: #0f1d3b;
   opacity: 0.5;
   content: '';
   position: absolute;
@@ -7926,7 +7927,7 @@ blockquote {
   height: 110px;
 }
 .fn_cs_services_classic .video_holder:after {
-  background-color: #16161b;
+  background-color: #0f1d3b;
   opacity: 0.5;
   content: '';
   position: absolute;
@@ -7940,7 +7941,7 @@ blockquote {
   padding: 100px 0 60px 0;
   position: relative;
   z-index: 5;
-  background-color: #16161b;
+  background-color: #0f1d3b;
   box-shadow: 0 10px 80px rgba(0, 0, 0, 0.2);
 }
 .fn_cs_services_classic.video_enable ul {
@@ -8604,7 +8605,7 @@ blockquote {
   text-align: center;
   color: #fff;
   text-decoration: none;
-  background-color: #16161b;
+  background-color: #0f1d3b;
 }
 .fn_cs_button a:hover {
   background-color: #ad3110;
@@ -8717,7 +8718,7 @@ blockquote {
 
 /* Spacing */
 .section_1 {
-  background-color: #16161b;
+  background-color: #0f1d3b;
 }
 .section_1 .fn_cs_description p {
   color: #999;
@@ -8786,7 +8787,7 @@ blockquote {
 }
 
 .section_2 {
-  background-color: #16161b;
+  background-color: #0f1d3b;
   border-top: 1px solid rgba(255, 255, 255, 0.1);
   padding: 194px 0 200px;
 }
@@ -8794,7 +8795,7 @@ blockquote {
   color: #eee;
 }
 .title__holder h3 {
-  color: #16161b;
+  color: #0f1d3b;
   font-size: 48px;
   font-weight: 400;
   margin: 0;
@@ -9735,7 +9736,7 @@ blockquote {
   clear: both;
   padding: 21px 80px 21px 30px;
   position: relative;
-  background-color: #111422;
+  background-color: #0f1d3b;
 }
 .fn_cs_location_list .title_holder h3 {
   margin: 0px;
@@ -9770,7 +9771,7 @@ blockquote {
   float: left;
   clear: both;
   padding: 34px 30px;
-  background-color: #0d0e13;
+  background-color: #0c1831;
   line-height: 1.5;
 }
 .fn_cs_location_list .content_holder ul {
