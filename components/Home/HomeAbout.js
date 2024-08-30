@@ -64,24 +64,8 @@ export default function HomeAbout() {
                     <div
                       className='abs_img'
                       data-bg-img='img/about/right.jpg'
-                      style={{ backgroundImage: 'url(img/about/right.webp)' }}
+                      style={{ backgroundImage: 'url(img/about/right.jpeg)' }}
                     ></div>
-                  </div>
-                  <div
-                    className='dots layer'
-                    data-switch='disable'
-                    data-depth='0.9'
-                    style={{
-                      position: 'absolute',
-                      display: 'block',
-                      left: '0px',
-                      top: '0px',
-                      transform: 'translate3d(63.8345px, -57.0226px, 0px)',
-                      transformStyle: 'preserve-3d',
-                      backfaceVisibility: 'hidden',
-                    }}
-                  >
-                    <img src='/img/thumb/500-560.jpg' alt='' />
                   </div>
                 </div>
               </div>
