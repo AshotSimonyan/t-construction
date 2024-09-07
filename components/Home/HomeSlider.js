@@ -11,7 +11,6 @@ export default function HomeSlider() {
   const t = useTranslations('homepage');
   const sliderData = t.raw('sliderData'); // Fetch the array of slider data directly
 
-  console.log(t.raw('sliderData'));
   return (
     <>
       <div

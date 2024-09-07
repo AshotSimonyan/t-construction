@@ -5,9 +5,9 @@ import { useLocale, useTranslations } from 'next-intl';
 
 export default function HomeProject() {
   const lang = useLocale();
-  const t = useTranslations('homepage.services'); // Get service translations
+  const t = useTranslations('homepage.services');
 
-  const services = t.raw('list'); // Retrieve the list of services from translations
+  const services = t.raw('list');
 
   return (
     <>
@@ -41,7 +41,7 @@ export default function HomeProject() {
                           </h3>
                           <p>
                             <Link href={`portfolioSinglePage${service.id}`}>
-                              <span className='text'>Տեսնել ավելին</span>
+                              <span className='text'>{t('seeMoreText')}</span>
                               <span className='arrow'>
                                 <Arrow_r className='fn__svg' />
                               </span>

@@ -4,7 +4,6 @@ import { getRequestConfig } from 'next-intl/server';
 const locales = ['hy', 'en', 'ru'];
 
 export default getRequestConfig(async ({ locale }) => {
-  console.log({ locale });
   if (!locales.includes(locale)) notFound();
 
   return {

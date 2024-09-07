@@ -1,29 +1,251 @@
 {
+  "meta": {
+    "title": "T-Construction LLC - Construction and Electrification Services in Armenia",
+    "description": "T-Construction LLC offers leading construction, electrification, and paving services in Armenia, ensuring quality, reliability, and safety."
+  },
   "header": {
     "nav": {
-      "home": "Home",
-      "services": "Services",
-      "contact": "Contact"
+      "home": "HOME",
+      "services": "SERVICES",
+      "contact": "CONTACT"
     },
-    "address": "Վահրամ Փափազյան 8"
+    "address": "Vahram Papazyan 8"
+  },
+  "footer": {
+    "nav": {
+      "home": "HOME",
+      "services": "SERVICES",
+      "contact": "CONTACT"
+    },
+    "description": "T-Construction CJSC provides high-quality construction, electrification, and asphalting services, ensuring quality, reliability, and safety.",
+    "usefulLinks": "Useful Links",
+    "contactUs": "Contact Us",
+    "address": {
+      "label": "Address",
+      "value": "Vahram Papazyan 8"
+    },
+    "phone": {
+      "label": "Phone",
+      "value": "+374 44 001 496"
+    },
+    "email": {
+      "label": "Email",
+      "value": "info@tconstruction.am"
+    },
+    "copyright": "T-Construction"
   },
   "homepage": {
+    "breadcrumb": "Home",
     "sliderData": [
       {
-        "title": "Կայուն Զարգացման Հիմքը",
-        "description": "«Տ-Քնսթրաքշն» ՓԲԸ-ն ապահովում է արդյունաբերական, բնակելի և առևտրային բարձրորակ նախագծերի իրականացում՝ հավատարիմ մնալով իր սկզբունքներին."
+        "title": "The Foundation of Sustainable Development",
+        "description": "T-Construction CJSC ensures the implementation of high-quality industrial, residential, and commercial projects, remaining true to its principles."
       },
       {
-        "title": "Ձեր վստահելի գործընկերը",
-        "description": "Մենք մատուցում ենք բազմաբնույթ շինարարական ծառայություններ՝ համապատասխանելով միջազգային չափանիշներին և գերազանցելով ձեր սպասելիքները:"
+        "title": "Your Trusted Partner",
+        "description": "We provide a wide range of construction services, adhering to international standards and exceeding your expectations."
       },
       {
-        "title": "Նորարար և կայուն լուծումներ",
-        "description": "Ժամանակակից տեխնոլոգիաներով և մասնագիտական վարպետությամբ մենք ապահովում ենք անվտանգ և կայուն շինարարական լուծումներ՝ ամենաբարդ նախագծերի համար:"
+        "title": "Innovative and Sustainable Solutions",
+        "description": "With modern technologies and professional craftsmanship, we provide safe and sustainable construction solutions for the most complex projects."
       },
       {
-        "title": "Բարձրորակ Շինարարություն",
-        "description": "«Տ-Քնսթրաքշն» ՓԲԸ-ն իրականացնում է որակյալ շինարարական լուծումներ՝ ապահովելով ձեր ամենաբարդ պահանջների բավարարվածությունը:"
+        "title": "High-Quality Construction",
+        "description": "T-Construction CJSC implements high-quality construction solutions, ensuring the satisfaction of your most complex requirements."
+      }
+    ],
+    "principles": [
+      {
+        "title": "Quality",
+        "description": "We ensure high-quality services by working with the best materials and technologies in every project.",
+        "number": "01"
+      },
+      {
+        "title": "Reliability",
+        "description": "We inspire trust in our clients by fulfilling our obligations on time and with high quality.",
+        "number": "02"
+      },
+      {
+        "title": "Safety",
+        "description": "We pay special attention to ensuring safety in all our projects, from the design stage to the final implementation.",
+        "number": "03"
+      }
+    ],
+    "whyChooseUs": {
+      "title": "Why Choose Us?",
+      "description1": "T-Construction CJSC was founded in April 2016.",
+      "description2": "Throughout the history of its activities, the company has proven to be a reliable partner. Working with us is always convenient and mutually beneficial, which is the basis for long-term and continuous cooperation, as evidenced by our continuously growing list of clients. We stand out in the industry by offering an optimal combination of price and quality. The company has all the necessary resources to bring any project to life from the initial steps to commissioning.",
+      "badgeTitle": "Trusted Leader in the Construction Industry",
+      "contactText": "Contact Us",
+      "listItems": [
+        "The best specialists in the field.",
+        "One of the most experienced companies in the construction industry.",
+        "We have completed numerous successful projects.",
+        "The company has all the necessary resources."
+      ]
+    },
+    "services": {
+      "title": "Our Services",
+      "description": "We carry out diverse projects, ensuring high quality, reliability, and safety.",
+      "list": [
+        {
+          "id": 101,
+          "title": "Construction",
+          "image": "/img/service/1.jpg"
+        },
+        {
+          "id": 102,
+          "title": "Electrification",
+          "image": "/img/service/2.jpg"
+        },
+        {
+          "id": 103,
+          "title": "Overhead and Underground Cable Works",
+          "image": "/img/service/3.jpg"
+        },
+        {
+          "id": 104,
+          "title": "Construction of Substations",
+          "image": "/img/service/4.jpg"
+        },
+        {
+          "id": 105,
+          "title": "Asphalting",
+          "image": "/img/service/5.jpg"
+        }
+      ],
+      "seeMoreText": "See more"
+    },
+    "about": {
+      "title": "Our Team",
+      "paragraph1": "Our specialists are regularly trained abroad to meet market demands and ensure high-quality services.",
+      "paragraph2": "We highly value the creation and maintenance of long-term and reliable relationships with our partners, so we fulfill our obligations on time and with proper quality."
+    }
+  },
+  "contact": {
+    "breadcrumb": "Contact Us",
+    "leaveMessage": "Leave Your Message",
+    "namePlaceholder": "Your Name",
+    "emailPlaceholder": "Your Email",
+    "messagePlaceholder": "Your Message",
+    "sendButton": "Send",
+    "successMessage": "Thank you, your message has been successfully sent!",
+    "retryButton": "Fill Again",
+    "emptyNotice": "Please fill in the required fields",
+    "contactDetails": "Contact Information",
+    "address": "Vahram Papazyan 8",
+    "phone": "Phone",
+    "email": "Email",
+    "errors": {
+      "REQUIRED_FIELD_EMPTY": "The field is required",
+      "REQUIRED_FIELD_MISSING": "The field is missing",
+      "STRIPE_CLIENT_ERROR": "Stripe client error",
+      "STRIPE_SCA_ERROR": "Stripe SCA error",
+      "TYPE_EMAIL": "Please enter a valid email address",
+      "TYPE_NUMERIC": "Please enter a number",
+      "TYPE_TEXT": "Please enter text",
+      "GENERIC_ERROR": "An error occurred"
+    }
+  },
+
+  "servicesPage": {
+    "meta": {
+      "title": "{title} - Service Page",
+      "description": "Learn more about {title} service and how we ensure quality, reliability, and safety."
+    },
+    "allServicesTitle": "All Services",
+    "services": [
+      {
+        "id": 101,
+        "title": "Construction",
+        "description": [
+          {
+            "type": "paragraph",
+            "content": "Since 2020, the company has been carrying out various construction works under state procurement. During these years, we have implemented the construction and renovation of dozens of schools, kindergartens, sports halls, parks, and yards, playgrounds, as well as water supply and drainage systems."
+          },
+          {
+            "type": "paragraph",
+            "content": "As part of the UN Development Program in Armenia, we implemented a state subsidy program aimed at increasing the energy efficiency and thermal efficiency of multi-apartment buildings in Syunik and Lori regions."
+          }
+        ],
+        "image": "/img/service/1.jpg"
+      },
+      {
+        "id": 102,
+        "title": "Electrification",
+        "description": [
+          {
+            "type": "list",
+            "items": [
+              {
+                "strong": "Construction of Power Supply Cables:",
+                "content": "Our team has the experience and technical skills for the construction and installation of power supply cables of any complexity. We use high-quality materials and modern technologies."
+              },
+              {
+                "strong": "Design and Engineering Solutions:",
+                "content": "Our engineers develop unique and efficient designs, ensuring high-level safety and reducing energy losses."
+              },
+              {
+                "strong": "Technical Consulting:",
+                "content": "We provide professional consulting services for optimizing and modernizing power supply systems. Choose us for your energy needs. Our team is ready to implement the most complex projects, meeting your most ambitious demands."
+              }
+            ],
+            "image": "/img/service/2.jpg"
+          },
+          {
+            "type": "paragraph",
+            "content": "Key characteristics of the power supply system include durability, reliability, and safety. All electrical installation works are carried out in accordance with high-quality standards, using cables and equipment from trusted and well-known manufacturers. Work is carried out on substations and cable lines of 0.22 kV, 0.4 kV, 6 kV, 10 kV, 35 kV, and 110 kV."
+          }
+        ]
+      },
+      {
+        "id": 103,
+        "title": "Overhead and Underground Cable Works",
+        "description": [
+          {
+            "type": "paragraph",
+            "content": "In the development of Armenia's power system, the construction of a 110 kV cable transmission line became an important milestone, ensuring a new level of energy transmission and stability."
+          },
+          {
+            "type": "paragraph",
+            "content": "Over the years, T-Construction CJSC has gained extensive experience in performing overhead and underground cable works. The company's main advantage lies in its highly qualified, certified, and experienced engineers and specialists."
+          },
+          {
+            "type": "paragraph",
+            "content": "The company offers a full range of services, including the design of general networks, design of power transmission and distribution lines, obtaining all necessary permits and licenses, supply and installation of cables and materials."
+          }
+        ],
+        "image": "/img/service/3.jpg"
+      },
+      {
+        "id": 104,
+        "title": "Construction of Substations",
+        "description": [
+          {
+            "type": "paragraph",
+            "content": "Electric networks and power supply form the basis of the industrial sector for telecommunications operators and service companies."
+          },
+          {
+            "type": "paragraph",
+            "content": "T-Construction CJSC has earned a reputation as a reliable partner and supplier of cutting-edge technologies in the power industry, thanks to its systematic approach to the construction of high and low-voltage electrical networks, optical grounding wires, and transmission lines, as well as the supply and installation of transformer substations and alternative energy systems."
+          }
+        ],
+        "image": "/img/service/4.jpg"
+      },
+      {
+        "id": 105,
+        "title": "Asphalting",
+        "description": [
+          {
+            "type": "paragraph",
+            "content": "Leading specialists in the field are ready to carry out any complex work of restoration, renovation, and asphalting for rural roads and national highways."
+          },
+          {
+            "type": "paragraph",
+            "content": "Since 2016, we have been implementing various road construction works."
+          }
+        ],
+        "image": "/img/service/5.jpg"
       }
     ]
   }
