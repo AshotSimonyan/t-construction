@@ -1,4 +1,9 @@
+'use client';
+import { useTranslations } from 'next-intl';
+
 export default function HomeAbout() {
+  const t = useTranslations('homepage.about'); // Fetch the about section translations
+
   return (
     <>
       <div className='about_section'>
@@ -8,16 +13,9 @@ export default function HomeAbout() {
             <div className='a_inner'>
               <div className='leftpart'>
                 <div className='title_holder'>
-                  <h3 className='title'>Մեր թիմը</h3>
-                  <p>
-                    Մեր մասնագետները պարբերաբար վերապատրաստվում են արտերկրում՝ շուկայի պահանջարկն ու
-                    ծառայությունների բարձր որակն ապահովելու համար:
-                  </p>{' '}
-                  <p>
-                    Մենք բարձր ենք գնահատում երկարաժամկետ և հուսալի հարաբերությունների ստեղծումն ու
-                    պահպանումը մեր գործընկերների հետ, ուստի կատարում ենք մեր պարտավորությունները
-                    ժամանակին և պատշաճ որակով:
-                  </p>
+                  <h3 className='title'>{t('title')}</h3>
+                  <p>{t('paragraph1')}</p>
+                  <p>{t('paragraph2')}</p>
                 </div>
               </div>
               <div className='rightpart'>

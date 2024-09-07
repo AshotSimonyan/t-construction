@@ -1,11 +1,20 @@
+'use client';
 import HomeAbout from '@/components/Home/HomeAbout';
 import HomePrinciples from '@/components/Home/HomePrinciples';
 import HomeSlider from '@/components/Home/HomeSlider';
 import HomeWhyChooseUs from '@/components/Home/HomeWhyChooseUs';
 import Layout from '@/layouts/layout';
 import HomeProject from '@/components/Home/HomeProject';
+import { useTranslations } from 'next-intl';
 
 export default function Home() {
+  const a = useTranslations('page');
+
+  console.log({ a });
+
+  const text = a.raw('header');
+  console.log('text-', text);
+
   return (
     <>
       <Layout className={'transdark'}>

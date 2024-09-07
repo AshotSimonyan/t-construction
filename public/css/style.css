@@ -891,13 +891,12 @@ p {
 }
 .industify_fn_toppanel {
   width: 100%;
-  float: left;
-  clear: both;
   background-color: #0f1d3b;
   display: flex;
-  flex-direction: row;
+  justify-content: space-between;
   padding: 0 50px;
   position: relative;
+
 }
 .industify_fn_toppanel .left_panel {
   display: flex;

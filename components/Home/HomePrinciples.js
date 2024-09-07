@@ -1,27 +1,10 @@
-import { Arrow_r } from '@/public/svg/icon';
-import Link from 'next/link';
+'use client';
+import { useTranslations } from 'next-intl';
 
 export default function HomePrinciples() {
-  const data = [
-    {
-      title: 'Որակ',
-      description:
-        'Մենք ապահովում ենք ծառայությունների բարձր որակը՝ աշխատելով լավագույն նյութերով և տեխնոլոգիաներով՝ ամեն նախագծում։',
-      number: '01',
-    },
-    {
-      title: 'Հուսալիություն',
-      description:
-        'Մենք վստահություն ենք ներշնչում մեր հաճախորդներին՝ կատարելով մեր պարտավորությունները ճիշտ ժամանակին և բարձր որակով։',
-      number: '02',
-    },
-    {
-      title: 'Անվտանգություն',
-      description:
-        'Մենք հատուկ ուշադրություն ենք դարձնում անվտանգության ապահովմանը մեր բոլոր ծրագրերում՝ սկսած նախագծման փուլից մինչև վերջնական իրականացում։',
-      number: '03',
-    },
-  ];
+  const t = useTranslations('homepage');
+  const principles = t.raw('principles');
+
   return (
     <>
       <div className='fn_cs_principles_modern'>
@@ -32,7 +15,7 @@ export default function HomePrinciples() {
               <span className='shape2'></span>
             </div>
             <ul className='fn_cs_miniboxes'>
-              {data.map((item, index) => (
+              {principles.map((item, index) => (
                 <li key={index}>
                   <div className='item'>
                     <div className='title_holder'>

@@ -1,7 +1,12 @@
+'use client';
 import React from 'react';
 import Link from 'next/link';
+import { useLocale, useTranslations } from 'next-intl';
 
 export default function Footer() {
+  const lang = useLocale();
+  const t = useTranslations('footer'); // Fetch footer translations from the separate footer section
+
   return (
     <>
       <footer className='industify_fn_footer'>
@@ -15,7 +20,7 @@ export default function Footer() {
                   <li>
                     <div className='item'>
                       <div className='logo'>
-                        <Link href='/'>
+                        <Link href={`/${lang}`}>
                           <img
                             src='/img/logo-light.svg'
                             alt='«Տ-Քնսթրաքշն» ՓԲԸ - Հայաստանում շինարարական և էլեկտրաֆիկացման առաջատար ընկերություն'
@@ -23,32 +28,25 @@ export default function Footer() {
                         </Link>
                       </div>
                       <div className='textwidget'>
-                        <p>
-                          «Տ-Քնսթրաքշն» ՓԲԸ-ն իրականացնում է բարձրակարգ շինարարական, էլեկտրաֆիկացման
-                          և ասֆալտապատման ծառայություններ՝ ապահովելով որակ, հուսալիություն և
-                          անվտանգություն:
-                        </p>
+                        <p>{t('description')}</p>
                       </div>
                     </div>
                   </li>
                   <li>
                     <div className='item'>
                       <div className='wid-title'>
-                        <span>Օգտակար Հղումներ</span>
+                        <span>{t('usefulLinks')}</span>
                       </div>
                       <div className='widget_nav_menu'>
                         <ul className='menu'>
                           <li>
-                            <Link href='/'>ԳԼԽԱՎՈՐ</Link>
+                            <Link href={`/${lang}`}>{t('nav.home')}</Link>
                           </li>
                           <li>
-                            <Link href='/services/101'>ԾԱՌԱՅՈՒԹՅՈՒՆՆԵՐ</Link>
+                            <Link href={`/${lang}/services/101`}>{t('nav.services')}</Link>
                           </li>
-                          {/*<li>
-                                                        <Link href="/gallery">ՊԱՏԿԵՐԱՍՐԱՀ</Link>
-                                                    </li>*/}
                           <li>
-                            <Link href='/contact'>ՀԵՏԱԴԱՐՁ ԿԱՊ</Link>
+                            <Link href={`/${lang}/contact`}>{t('nav.contact')}</Link>
                           </li>
                         </ul>
                       </div>
@@ -57,31 +55,30 @@ export default function Footer() {
                   <li>
                     <div className='item'>
                       <div className='wid-title'>
-                        <span>Կապ Մեզ Հետ</span>
+                        <span>{t('contactUs')}</span>
                       </div>
                       <div className='industify_fn_widget_business_hours'>
                         <div>
                           <ul>
                             <li>
                               <div className='day_item'>
-                                <span className='day'>հասցե:</span>
-                                <span className='hours'>Վահրամ Փափազյան 8</span>
+                                <span className='day'>{t('address.label')}:</span>
+                                <span className='hours'>{t('address.value')}</span>
                               </div>
                             </li>
                             <li>
                               <div className='day_item'>
-                                <span className='day'>հեռախոս:</span>
+                                <span className='day'>{t('phone.label')}:</span>
                                 <a href='tel:+37444001496'>
-                                  {' '}
-                                  <span className='hours'>+374 44 001 496</span>
+                                  <span className='hours'>{t('phone.value')}</span>
                                 </a>
                               </div>
                             </li>
                             <li>
                               <div className='day_item'>
-                                <span className='day'>Էլ. հասցե:</span>
+                                <span className='day'>{t('email.label')}:</span>
                                 <a href='mailto:info@tconstruction.am'>
-                                  <span className='hours'>info@tconstruction.am</span>
+                                  <span className='hours'>{t('email.value')}</span>
                                 </a>
                               </div>
                             </li>
@@ -101,7 +98,9 @@ export default function Footer() {
           <div className='container'>
             <div className='footer_bottom_in'>
               <div className='footer_copyright'>
-                <p>&copy; Տ-Քնսթրաքշն {new Date().getFullYear()}</p>
+                <p>
+                  &copy; {t('copyright')} {new Date().getFullYear()}
+                </p>
               </div>
               {/*<a href="#"className="industify_fn_totop">*/}
               {/*    <span className="top"></span>*/}

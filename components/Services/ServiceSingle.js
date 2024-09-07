@@ -1,7 +1,12 @@
+'use client';
 import Link from 'next/link';
-import { services } from '@/constants/data';
+import { useTranslations } from 'next-intl';
+import { useLocale } from 'next-intl';
 
 export default function ServicesSingle({ service }) {
+  const lang = useLocale();
+  const t = useTranslations('servicesPage'); // Fetch service page translations
+
   return (
     <>
       <div className='industify_fn_sidebarpage'>
@@ -13,10 +18,12 @@ export default function ServicesSingle({ service }) {
 
               <div className='industify_fn_service_single'>
                 <div className='img_holder'>
-                  <img src={service.image} alt='' />
+                  <img src={service.image} alt={service.title} />
                 </div>
 
-                <div className='desc_holder'>{service.description}</div>
+                <div className='desc_holder'>
+                  <p>{t(`services.${service.id - 101}.description`)}</p>
+                </div>
               </div>
               {/* /Single Service  */}
             </div>
@@ -26,13 +33,13 @@ export default function ServicesSingle({ service }) {
               {/* Service List  */}
               <div className='service_list_as_function'>
                 <div className='title'>
-                  <h3>Բոլոր Ծառայությունները</h3>
+                  <h3>{t('allServicesTitle')}</h3>
                 </div>
                 <div className='list_holder'>
                   <ul>
-                    {services.map((service) => (
+                    {t.raw('services').map((service) => (
                       <li key={service.id}>
-                        <Link href={`/services/${service.id}`}>{service.title}</Link>
+                        <Link href={`/${lang}/services/${service.id}`}>{service.title}</Link>
                       </li>
                     ))}
                   </ul>

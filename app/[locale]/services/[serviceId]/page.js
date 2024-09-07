@@ -15,7 +15,6 @@ export const generateMetadata = ({ params }) => {
 export default function page({ params }) {
   const serviceId = +params?.serviceId;
   const currentService = services.find((service) => service.id === serviceId);
-  console.log('currentService-', currentService);
   return (
     <Layout>
       <Breadcumb CurrentPage={currentService.title} />

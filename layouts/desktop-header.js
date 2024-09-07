@@ -1,9 +1,15 @@
 'use client';
-
 import React from 'react';
 import Link from 'next/link';
+import LanguagePicker from '@/components/Language/Language';
+import { useLocale, useTranslations } from 'next-intl';
 
 export default function DesktopHeader() {
+  const lang = useLocale();
+  const t = useTranslations('header');
+  const nav = t.raw('nav');
+  const address = t('address');
+
   return (
     <>
       <div className='industify_fn_header'>
@@ -17,8 +23,11 @@ export default function DesktopHeader() {
               <a href='mailto:info@tconstruction.am'>info@tconstruction.am</a>
             </div>
             <div className='info'>
-              <span>Վահրամ Փափազյան 8</span>
+              <span>{t('address')}</span>
             </div>
+          </div>
+          <div className='right_panel'>
+            <LanguagePicker />
           </div>
         </div>
         {/* /Header: Top Panel */}
@@ -26,32 +35,32 @@ export default function DesktopHeader() {
         {/* Header: Bottom Panel */}
         <div className='header_inner'>
           <div className='menu_logo'>
-            <Link href='/'>
+            <Link href={`/${lang}`}>
               <img
                 className='desktop_logo'
                 src='/img/logo-light.svg'
-                alt='«Տ-Քնսթրաքշն» ՓԲԸ - Հայաստանում շինարարական և էլեկտրաֆիկացման առաջատար ընկերություն
-'
+                alt='«Տ-Քնսթրաքշն» ՓԲԸ - Հայաստանում շինարարական և էլեկտրաֆիկացման առաջատար ընկերություն'
               />
               <img
                 className='desktop_logo_dark'
                 src='/img/logo.svg'
-                alt='«Տ-Քնսթրաքշն» ՓԲԸ - Հայաստանում շինարարական և էլեկտրաֆիկացման առաջատար ընկերություն
-'
+                alt='«Տ-Քնսթրաքշն» ՓԲԸ - Հայաստանում շինարարական և էլեկտրաֆիկացման առաջատար ընկերություն'
               />
             </Link>
           </div>
           <div className='menu_nav'>
             <ul className='industify_fn_main_nav vert_nav'>
               <li>
-                <Link href='/'>ԳԼԽԱՎՈՐ</Link>
+                <Link href={`/${lang}`}>{nav.home}</Link>
               </li>
               <li>
-                <Link href='/services/101'>ԾԱՌԱՅՈՒԹՅՈՒՆՆԵՐ</Link>
+                <Link href={`/${lang}/services/101`}>{nav.services}</Link>
               </li>
-              <li>{/*<Link href="/gallery">ՊԱՏԿԵՐԱՍՐԱՀ</Link>*/}</li>
+              {/*<li>*/}
+              {/*  <Link href='/gallery'>ՊԱՏԿԵՐԱՍՐԱՀ</Link>*/}
+              {/*</li>*/}
               <li>
-                <Link href='/contact'>ՀԵՏԱԴԱՐՁ ԿԱՊ</Link>
+                <Link href={`/${lang}/contact`}>{nav.contact}</Link>
               </li>
             </ul>
           </div>

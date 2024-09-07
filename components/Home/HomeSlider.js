@@ -2,38 +2,16 @@
 // import function to register Swiper custom elements
 import { register } from 'swiper/element/bundle';
 import { Swiper, SwiperSlide } from 'swiper/react';
+import { useTranslations } from 'next-intl';
 
 // register Swiper custom elements
 register();
 
-const slideData = [
-  {
-    title: 'Կայուն Զարգացման Հիմքը',
-    description:
-      '«Տ-Քնսթրաքշն» ՓԲԸ-ն ապահովում է արդյունաբերական, բնակելի և առևտրային բարձրորակ նախագծերի իրականացում՝ հավատարիմ մնալով իր սկզբունքներին.',
-    backgroundImage: '/img/slider/1.jpg',
-  },
-  {
-    title: 'Ձեր վստահելի գործընկերը',
-    description:
-      'Մենք մատուցում ենք բազմաբնույթ շինարարական ծառայություններ՝ համապատասխանելով միջազգային չափանիշներին և գերազանցելով ձեր սպասելիքները:',
-    backgroundImage: '/img/slider/2.jpg',
-  },
-  {
-    title: 'Նորարար և կայուն լուծումներ',
-    description:
-      'Ժամանակակից տեխնոլոգիաներով և մասնագիտական վարպետությամբ մենք ապահովում ենք անվտանգ և կայուն շինարարական լուծումներ՝ ամենաբարդ նախագծերի համար:',
-    backgroundImage: '/img/slider/3.jpg',
-  },
-  {
-    title: 'Բարձրորակ Շինարարություն',
-    description:
-      '«Տ-Քնսթրաքշն» ՓԲԸ-ն իրականացնում է որակյալ շինարարական լուծումներ՝ ապահովելով ձեր ամենաբարդ պահանջների բավարարվածությունը:',
-    backgroundImage: '/img/slider/4.jpg',
-  },
-];
-
 export default function HomeSlider() {
+  const t = useTranslations('homepage');
+  const sliderData = t.raw('sliderData'); // Fetch the array of slider data directly
+
+  console.log(t.raw('sliderData'));
   return (
     <>
       <div
@@ -87,12 +65,12 @@ export default function HomeSlider() {
           }}
           className='custom-class'
         >
-          {slideData.map((slide, index) => (
+          {sliderData.map((slide, index) => (
             <SwiperSlide key={index}>
               <div className='item'>
                 <div
                   className='img_holder'
-                  style={{ backgroundImage: `url(${slide.backgroundImage})` }}
+                  style={{ backgroundImage: `url(/img/slider/${index + 1}.jpg)` }}
                 ></div>
                 <div className='title_holder'>
                   <div className='inner'>

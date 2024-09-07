@@ -2,14 +2,20 @@
 import React, { useState, useEffect } from 'react';
 import MetisMenu from 'metismenujs';
 import Link from 'next/link';
+import LanguagePicker from '@/components/Language/Language';
+import { useLocale, useTranslations } from 'next-intl';
 
 export default function MobileHeader() {
   const [isMobileMenu, setMobileMenu] = useState(false);
-  const MobileMenuTrueFalse = () => setMobileMenu(!isMobileMenu);
+  const lang = useLocale();
+  const t = useTranslations('header');
+  const nav = t.raw('nav');
 
   useEffect(() => {
     new MetisMenu('#metismenu');
   }, []);
+
+  const MobileMenuTrueFalse = () => setMobileMenu(!isMobileMenu);
 
   return (
     <>
@@ -31,7 +37,7 @@ export default function MobileHeader() {
         <div className='logo_hamb'>
           <div className='in'>
             <div className='menu_logo'>
-              <Link href='/'>
+              <Link href={`/${lang}`}>
                 <img
                   src='/img/logo-light.svg'
                   alt='«Տ-Քնսթրաքշն» ՓԲԸ - Հայաստանում շինարարական և էլեկտրաֆիկացման առաջատար ընկերություն'
@@ -59,19 +65,20 @@ export default function MobileHeader() {
             <nav>
               <ul className='mmenu' id='metismenu'>
                 <li>
-                  <Link href='/'>ԳԼԽԱՎՈՐ</Link>
+                  <Link href={`/${lang}`}>{nav.home}</Link>
                 </li>
                 <li>
-                  <Link href='/services/101'>ԾԱՌԱՅՈՒԹՅՈՒՆՆԵՐ</Link>
+                  <Link href={`/${lang}/services/101`}>{nav.services}</Link>
                 </li>
                 {/*<li>*/}
                 {/*  <Link href='/gallery'>ՊԱՏԿԵՐԱՍՐԱՀ</Link>*/}
                 {/*</li>*/}
                 <li>
-                  <Link href='/contact'>ՀԵՏԱԴԱՐՁ ԿԱՊ</Link>
+                  <Link href={`/${lang}/contact`}>{nav.contact}</Link>
                 </li>
               </ul>
             </nav>
+            <LanguagePicker />
           </div>
         </div>
         {/* /MOBILE DROPDOWN MENU */}

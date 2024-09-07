@@ -10,14 +10,21 @@
     "prettier": "prettier --write ."
   },
   "dependencies": {
+    "@formatjs/intl-localematcher": "^0.5.4",
     "@formspree/react": "^2.5.1",
     "fslightbox-react": "^1.7.6",
+    "i18next": "^23.14.0",
+    "i18next-resources-to-backend": "^1.2.1",
     "isotope-layout": "^3.0.6",
     "metismenujs": "^1.4.0",
+    "negotiator": "^0.6.3",
     "next": "14.0.2",
+    "next-i18next": "^15.3.1",
+    "next-intl": "^3.18.1",
     "react": "^18",
     "react-countup": "^6.5.0",
     "react-dom": "^18",
+    "react-i18next": "^15.0.1",
     "react-modal-video": "^2.0.1",
     "react-visibility-sensor": "^5.1.1",
     "swiper": "^11.0.4"

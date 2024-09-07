@@ -1,8 +1,14 @@
+'use client';
 import { Arrow_r } from '@/public/svg/icon';
 import Link from 'next/link';
-import { services } from '@/constants/data';
+import { useLocale, useTranslations } from 'next-intl';
 
 export default function HomeProject() {
+  const lang = useLocale();
+  const t = useTranslations('homepage.services'); // Get service translations
+
+  const services = t.raw('list'); // Retrieve the list of services from translations
+
   return (
     <>
       <div className='fn_cs_project_sticky'>
@@ -10,11 +16,8 @@ export default function HomeProject() {
           <div className='inner'>
             <div className='left_part'>
               <div className='fn_cs_sticky_section'>
-                <h3>Մեր Ծառայությունները</h3>
-                <p>
-                  Մենք իրականացնում ենք բազմաբնույթ նախագծեր՝ ապահովելով բարձր որակ, հուսալիություն
-                  և անվտանգություն:
-                </p>
+                <h3>{t('title')}</h3>
+                <p>{t('description')}</p>
               </div>
             </div>
             <div className='right_part'>
@@ -29,12 +32,12 @@ export default function HomeProject() {
                             className='abs_img'
                             style={{ backgroundImage: `url(${service.image})` }}
                           >
-                            <Link href={`/services/${service.id}`}></Link>
+                            <Link href={`/${lang}/services/${service.id}`}></Link>
                           </div>
                         </div>
                         <div className='title_holder'>
                           <h3>
-                            <Link href={`/services/${service.id}`}>{service.title}</Link>
+                            <Link href={`/${lang}/services/${service.id}`}>{service.title}</Link>
                           </h3>
                           <p>
                             <Link href={`portfolioSinglePage${service.id}`}>

@@ -3,6 +3,7 @@ import Breadcumb from '@/layouts/breadcumb';
 import Layout from '@/layouts/layout';
 import { Location } from '@/public/svg/icon';
 import { useForm } from '@formspree/react';
+import { useTranslations } from 'next-intl';
 
 const FieldErrorCodeEnum = {
   REQUIRED_FIELD_EMPTY: 'REQUIRED_FIELD_EMPTY',
@@ -14,29 +15,19 @@ const FieldErrorCodeEnum = {
   TYPE_TEXT: 'TYPE_TEXT',
 };
 
-// Armenian translations for error messages
-const errorMessages = {
-  [FieldErrorCodeEnum.REQUIRED_FIELD_EMPTY]: 'Դաշտը պարտադիր է',
-  [FieldErrorCodeEnum.REQUIRED_FIELD_MISSING]: 'Դաշտը բացակայում է',
-  [FieldErrorCodeEnum.STRIPE_CLIENT_ERROR]: 'STRIPE հաճախորդի սխալ',
-  [FieldErrorCodeEnum.STRIPE_SCA_ERROR]: 'STRIPE SCA սխալ',
-  [FieldErrorCodeEnum.TYPE_EMAIL]: 'Մուտքագրեք վավեր էլ. հասցե',
-  [FieldErrorCodeEnum.TYPE_NUMERIC]: 'Մուտքագրեք թիվ',
-  [FieldErrorCodeEnum.TYPE_TEXT]: 'Մուտքագրեք տեքստ',
-};
-
-// Function to get the appropriate Armenian message
-const getErrorMessage = (error) => {
-  return errorMessages[error.code] || 'Սխալ է տեղի ունեցել։';
-};
-
-export default function page() {
+export default function ContactPage() {
+  const t = useTranslations('contact'); // Use the 'contact' section for translations
   const [state, handleSubmit, reset] = useForm('xwpeonow');
   const fieldErrors = state.errors?.fieldErrors || new Map();
 
+  // Function to get the appropriate dynamic error message
+  const getErrorMessage = (error) => {
+    return t(`errors.${error.code}`, { defaultValue: t('errors.GENERIC_ERROR') });
+  };
+
   return (
     <Layout>
-      <Breadcumb CurrentPage={'Հետադարձ կապ'} />
+      <Breadcumb CurrentPage={t('breadcrumb')} />
       <div className='industify_fn_contact'>
         <div className='container'>
           <div className='contact_in'>
@@ -52,20 +43,25 @@ export default function page() {
 
             <div className='contact_holder'>
               <div className='contact_left'>
-                <h3>Թողեք Ձեր հաղորդագրությունը</h3>
+                <h3>{t('leaveMessage')}</h3>
                 {state.succeeded ? (
                   <div className='success'>
-                    <p>Շնորհակալություն, Ձեզ հաղորդագրությունը հաջողությամբ ուղարկվեց!</p>
-                    <button onClick={reset}>Կրկին լրացնել</button>
+                    <p>{t('successMessage')}</p>
+                    <button onClick={reset}>{t('retryButton')}</button>
                   </div>
                 ) : (
                   <form onSubmit={handleSubmit}>
                     <div className='empty_notice'>
-                      <span>Please Fill Required Fields</span>
+                      <span>{t('emptyNotice')}</span>
                     </div>
                     <div className='items'>
                       <div className='item'>
-                        <input id='name' type='text' name='name' placeholder='Ձեր անունը' />
+                        <input
+                          id='name'
+                          type='text'
+                          name='name'
+                          placeholder={t('namePlaceholder')}
+                        />
                         {fieldErrors.has('name') && (
                           <div className='error-message'>
                             {fieldErrors.get('name').map((error, index) => (
@@ -75,7 +71,12 @@ export default function page() {
                         )}
                       </div>
                       <div className='item'>
-                        <input id='email' type='email' name='email' placeholder='Ձեր էլ. հասցեն' />
+                        <input
+                          id='email'
+                          type='email'
+                          name='email'
+                          placeholder={t('emailPlaceholder')}
+                        />
                         {fieldErrors.has('email') && (
                           <div className='error-message'>
                             {fieldErrors.get('email').map((error, index) => (
@@ -85,7 +86,11 @@ export default function page() {
                         )}
                       </div>
                       <div className='item'>
-                        <textarea id='message' name='message' placeholder='Ձեր հաղորդագրությունը' />
+                        <textarea
+                          id='message'
+                          name='message'
+                          placeholder={t('messagePlaceholder')}
+                        />
                         {fieldErrors.has('message') && (
                           <div className='error-message'>
                             {fieldErrors.get('message').map((error, index) => (
@@ -96,7 +101,7 @@ export default function page() {
                       </div>
                       <div className='item'>
                         <button id='send_message' type='submit' disabled={state.submitting}>
-                          Ուղարկել
+                          {t('sendButton')}
                         </button>
                       </div>
                     </div>
@@ -115,16 +120,16 @@ export default function page() {
                             </span>
                             <span className='shape'></span>
                           </span>
-                          <h3>Կոնտակտային տվյալներ</h3>
+                          <h3>{t('contactDetails')}</h3>
                         </div>
                         <div className='content_holder'>
                           <ul>
-                            <li>Վահրամ Փափազյան 8</li>
+                            <li>{t('address')}</li>
                             <li>
-                              Հեռախոս: <a href='tel:+37444001496'>+374 44 001 496</a>
+                              {t('phone')}: <a href='tel:+37444001496'>+374 44 001 496</a>
                             </li>
                             <li>
-                              Էլ. հասցե:{' '}
+                              {t('email')}:{' '}
                               <a href='mailto:info@tconstruction.am'>info@tconstruction.am</a>
                             </li>
                           </ul>
