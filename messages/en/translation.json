@@ -74,7 +74,7 @@
     "whyChooseUs": {
       "title": "Why Choose Us?",
       "description1": "T-Construction CJSC was founded in April 2016.",
-      "description2": "Throughout the history of its activities, the company has proven to be a reliable partner. Working with us is always convenient and mutually beneficial, which is the basis for long-term and continuous cooperation, as evidenced by our continuously growing list of clients. We stand out in the industry by offering an optimal combination of price and quality. The company has all the necessary resources to bring any project to life from the initial steps to commissioning.",
+      "description2": "The company has been able to prove itself as a reliable partner during its history of activities. Working with us is always convenient and mutually beneficial, which is vital for a long-term and continuous cooperation, the proof of which is the constantly growing list of our clients. We stand out in the industry with the combination of optimal price and high quality. The company has all the necessary resources to implement any project from the initial steps to commissioning.",
       "badgeTitle": "Trusted Leader in the Construction Industry",
       "contactText": "Contact Us",
       "listItems": [
@@ -100,7 +100,7 @@
         },
         {
           "id": 103,
-          "title": "Overhead and Underground Cable Works",
+          "title": "Aerial and underground cable work",
           "image": "/img/service/3.jpg"
         },
         {
@@ -110,7 +110,7 @@
         },
         {
           "id": 105,
-          "title": "Asphalting",
+          "title": "Asphalt paving",
           "image": "/img/service/5.jpg"
         }
       ],
@@ -118,8 +118,8 @@
     },
     "about": {
       "title": "Our Team",
-      "paragraph1": "Our specialists are regularly trained abroad to meet market demands and ensure high-quality services.",
-      "paragraph2": "We highly value the creation and maintenance of long-term and reliable relationships with our partners, so we fulfill our obligations on time and with proper quality."
+      "paragraph1": "Our specialists are regularly trained abroad to meet the market demand and high quality of services.",
+      "paragraph2": "We value building and maintaining long-term and reliable relationships with our partners, so we fulfill our commitments on time and with the right quality."
     }
   },
   "contact": {
@@ -161,11 +161,11 @@
         "description": [
           {
             "type": "paragraph",
-            "content": "Since 2020, the company has been carrying out various construction works under state procurement. During these years, we have implemented the construction and renovation of dozens of schools, kindergartens, sports halls, parks, and yards, playgrounds, as well as water supply and drainage systems."
+            "content": "Starting from 2020, the company has been carrying out various construction works within the framework of state procurement. During these years, we have carried out construction and reconstruction of dozens of schools, kindergartens, sports facilities, improvement of gardens and yards, construction of playgrounds, construction and reconstruction of water supply and drainage systems."
           },
           {
             "type": "paragraph",
-            "content": "As part of the UN Development Program in Armenia, we implemented a state subsidy program aimed at increasing the energy efficiency and thermal efficiency of multi-apartment buildings in Syunik and Lori regions."
+            "content": "Within the framework of the United Nations Development Program in Armenia, we implemented a state subsidy program aimed at increasing the energy efficiency and thermal efficiency of apartment buildings in Syunik and Lori marzes."
           }
         ],
         "image": "/img/service/1.jpg"
@@ -178,41 +178,41 @@
             "type": "list",
             "items": [
               {
-                "strong": "Construction of Power Supply Cables:",
-                "content": "Our team has the experience and technical skills for the construction and installation of power supply cables of any complexity. We use high-quality materials and modern technologies."
+                "strong": "Construction of Power Supply Wires:",
+                "content": "Our team has the experience and technical skills to build and install cables of any complexity. We use high-quality materials and modern technologies."
               },
               {
-                "strong": "Design and Engineering Solutions:",
-                "content": "Our engineers develop unique and efficient designs, ensuring high-level safety and reducing energy losses."
+                "strong": "Project Design and Engineering Solutions:",
+                "content": "Our engineers develop unique and efficient projects, ensuring a high level of safety and reducing energy losses."
               },
               {
                 "strong": "Technical Consulting:",
-                "content": "We provide professional consulting services for optimizing and modernizing power supply systems. Choose us for your energy needs. Our team is ready to implement the most complex projects, meeting your most ambitious demands."
+                "content": "We provide professional advice for the optimization and modernization of power supply systems."
               }
             ],
             "image": "/img/service/2.jpg"
           },
           {
             "type": "paragraph",
-            "content": "Key characteristics of the power supply system include durability, reliability, and safety. All electrical installation works are carried out in accordance with high-quality standards, using cables and equipment from trusted and well-known manufacturers. Work is carried out on substations and cable lines of 0.22 kV, 0.4 kV, 6 kV, 10 kV, 35 kV, and 110 kV."
+            "content": "Choose Us for your energy needs. Our team is ready to implement the most complex projects, ensuring that your most ambitious requirements are met.\nDurability, reliability and safety are among the important characteristics of the power supply system. All electrical installation works are carried out in accordance with high quality standards, cables and equipment of reliable and well-known manufacturers are used. Construction of 0.22kW, 0.4kW, 6kW, 10kW, 35kW and 110kW substations and cable lines are carried out."
           }
         ]
       },
       {
         "id": 103,
-        "title": "Overhead and Underground Cable Works",
+        "title": "Aerial and underground cable work",
         "description": [
           {
             "type": "paragraph",
-            "content": "In the development of Armenia's power system, the construction of a 110 kV cable transmission line became an important milestone, ensuring a new level of energy transmission and stability."
+            "content": "In the development of Armenia's power system, the construction of the first 110kW cable power line became an important achievement, ensuring a new level and stability of power transmission."
           },
           {
             "type": "paragraph",
-            "content": "Over the years, T-Construction CJSC has gained extensive experience in performing overhead and underground cable works. The company's main advantage lies in its highly qualified, certified, and experienced engineers and specialists."
+            "content": "In the course of long-term work, T-Construction CJSC has gained rich experience in performing aerial and underground cable work. The main advantage of the company is its highly qualified, certified, experienced engineers and specialists."
           },
           {
             "type": "paragraph",
-            "content": "The company offers a full range of services, including the design of general networks, design of power transmission and distribution lines, obtaining all necessary permits and licenses, supply and installation of cables and materials."
+            "content": "The company provides a complete set of services: design of general networks, design of power transmission and distribution lines, all necessary permits, patents, design and planning documents, supply of cables and materials, installation."
           }
         ],
         "image": "/img/service/3.jpg"
@@ -223,26 +223,26 @@
         "description": [
           {
             "type": "paragraph",
-            "content": "Electric networks and power supply form the basis of the industrial sector for telecommunications operators and service companies."
+            "content": "Power grids and power supply are the pillars of the industry for telecommunications operators and service companies․"
           },
           {
             "type": "paragraph",
-            "content": "T-Construction CJSC has earned a reputation as a reliable partner and supplier of cutting-edge technologies in the power industry, thanks to its systematic approach to the construction of high and low-voltage electrical networks, optical grounding wires, and transmission lines, as well as the supply and installation of transformer substations and alternative energy systems."
+            "content": "T-Construction CJSC has gained a reputation in the market as a reliable partner and a supplier of modern technologies for the electricity industry by providing a systematic approach to the construction of high and low voltage electrical networks, optical grounding wires and transmission lines, as well as by supplying and installing power transformer substations and alternative energy systems."
           }
         ],
         "image": "/img/service/4.jpg"
       },
       {
         "id": 105,
-        "title": "Asphalting",
+        "title": "Asphalt paving",
         "description": [
           {
             "type": "paragraph",
-            "content": "Leading specialists in the field are ready to carry out any complex work of restoration, renovation, and asphalting for rural roads and national highways."
+            "content": "The leading specialists in the field are ready to carry out restoration, overhaul and asphalting on rural roads, national highways of any complexity."
           },
           {
             "type": "paragraph",
-            "content": "Since 2016, we have been implementing various road construction works."
+            "content": "Since 2016, we have carried out road construction works of various complexity."
           }
         ],
         "image": "/img/service/5.jpg"
